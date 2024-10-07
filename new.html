@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landsat Missions Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        p {
+            margin-bottom: 1em;
+        }
+        ul {
+            margin-left: 20px;
+            list-style-type: disc;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            text-align: center;
+        }
+        .image-caption {
+            text-align: center;
+            font-size: 0.9em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Landsat Missions Overview</h1>
+
+    <p>The Landsat program, initiated in 1972, has been capturing detailed Earth imagery for environmental monitoring, land use change analysis, and climate studies. Over time, a series of satellites equipped with progressively more advanced sensors have been launched. Each Landsat mission has contributed significantly to global remote sensing applications.</p>
+
+    <!-- Landsat 8 Image -->
+    <img src="landsat8.jpg" alt="Landsat 8 Satellite">
+    <div class="image-caption">Landsat 8 Satellite - Capturing Earth's imagery from space (Image Source: NASA)</div>
+
+    <h2>List of Landsat Missions</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Mission</th>
+                <th>Launch Date</th>
+                <th>Decommission Date</th>
+                <th>Sensors</th>
+                <th>Resolution</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Landsat 1</strong></td>
+                <td>July 23, 1972</td>
+                <td>January 6, 1978</td>
+                <td>Multispectral Scanner (MSS)</td>
+                <td>80 meters</td>
+            </tr>
+            <tr>
+                <td><strong>Landsat 2</strong></td>
+                <td>January 22, 1975</td>
+                <td>February 25, 1982</td>
+                <td>Multispectral Scanner (MSS)</td>
+                <td>80 meters</td>
+            </tr>
+            <tr>
+                <td><strong>Landsat 3</strong></td>
+                <td>March 5, 1978</td>
+                <td>September 7, 1983</td>
+                <td>Multispectral Scanner (MSS)</td>
+                <td>80 meters</td>
+            </tr>
+            <tr>
+                <td><strong>Landsat 4</strong></td>
+                <td>July 16, 1982</td>
+                <td>June 15, 2001</td>
+                <td>Multispectral Scanner (MSS), Thematic Mapper (TM)</td>
+                <td>30 meters (TM), 80 meters (MSS)</td>
+            </tr>
+            <tr>
+                <td><strong>Landsat 5</strong></td>
+                <td>March 1, 1984</td>
+                <td>June 5, 2013</td>
+                <td>Multispectral Scanner (MSS), Thematic Mapper (TM)</td>
+                <td>30 meters (TM), 80 meters (MSS)</td>
+            </tr>
+            <tr>
+                <td><strong>Landsat 6</strong></td>
+                <td>October 5, 1993</td>
+                <td>Failed to reach orbit</td>
+                <td>Enhanced Thematic Mapper (ETM)</td>
+                <td>N/A</td>
+            </tr>
+            <tr>
+                <td><strong>Landsat 7</strong></td>
+                <td>April 15, 1999</td>
+                <td>Still Operational</td>
+                <td>Enhanced Thematic Mapper Plus (ETM+)</td>
+                <td>30 meters (ETM+), 15 meters (Panchromatic)</td>
+            </tr>
+            <tr>
+                <td><strong>Landsat 8</strong></td>
+                <td>February 11, 2013</td>
+                <td>Still Operational</td>
+                <td>Operational Land Imager (OLI), Thermal Infrared Sensor (TIRS)</td>
+                <td>30 meters (OLI), 100 meters (TIRS)</td>
+            </tr>
+            <tr>
+                <td><strong>Landsat 9</strong></td>
+                <td>September 27, 2021</td>
+                <td>Still Operational</td>
+                <td>Operational Land Imager (OLI-2), Thermal Infrared Sensor (TIRS-2)</td>
+                <td>30 meters (OLI-2), 100 meters (TIRS-2)</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Earth observation image -->
+    <img src="first.jpg" alt="Landsat Earth Observation">
+    <div class="image-caption">First light image captured by Landsat 9 (Image Source: NASA)</div>
+
+    <h2>Key Features of Landsat Missions</h2>
+    <ul>
+        <li><strong>Multispectral Scanner (MSS)</strong>: The earliest sensor used in Landsat 1-5. Captured data in four spectral bands with a spatial resolution of 80 meters.</li>
+        <li><strong>Thematic Mapper (TM)</strong>: Introduced on Landsat 4, this sensor captured data in seven spectral bands with a spatial resolution of 30 meters (visible, near-infrared, and shortwave infrared) and 120 meters for thermal infrared.</li>
+        <li><strong>Enhanced Thematic Mapper Plus (ETM+)</strong>: Added on Landsat 7, providing 30-meter resolution in most spectral bands and a 15-meter panchromatic band for high-resolution imagery.</li>
+        <li><strong>Operational Land Imager (OLI)</strong>: Introduced on Landsat 8, capturing data in nine spectral bands with improved signal-to-noise performance and a new coastal/aerosol band.</li>
+        <li><strong>Thermal Infrared Sensor (TIRS)</strong>: Captures thermal infrared data at a resolution of 100 meters for temperature and heat analysis.</li>
+    </ul>
+
+    <h2>Notable Achievements of the Landsat Program</h2>
+    <ul>
+        <li>Landsat 5 holds the record for the longest-operating Earth observation satellite, operational for nearly 29 years.</li>
+        <li>Landsat 7 ETM+ introduced the panchromatic band, enabling higher spatial resolution for urban and land use studies.</li>
+        <li>Landsat 8 and Landsat 9 continue to provide high-quality multispectral and thermal imagery for environmental research and monitoring.</li>
+        <li>The Landsat program’s 50-year archive offers a comprehensive and consistent view of Earth’s surface, supporting long-term studies on climate change, deforestation, and agricultural expansion.</li>
+    </ul>
+
+    <!-- Forest monitoring image -->
+    <img src="forest.jpg" alt="Landsat Monitoring Deforestation">
+    <div class="image-caption">Landsat image showing deforestation in Brazil (Image Source: NASA)</div>
+
+    <h2>Applications of Landsat Data</h2>
+    <ul>
+        <li><strong>Environmental Monitoring</strong>: Assessing changes in forest cover, urban expansion, and agricultural practices over time.</li>
+        <li><strong>Climate Change Studies</strong>: Analyzing long-term temperature changes, ice melt, and sea level rise using thermal infrared and other spectral data.</li>
+        <li><strong>Water Resource Management</strong>: Monitoring water bodies, detecting changes in water quality, and managing irrigation.</li>
+        <li><strong>Disaster Response</strong>: Assessing damage from wildfires, floods, hurricanes, and other natural disasters using satellite imagery.</li>
+        <li><strong>Land Use Planning

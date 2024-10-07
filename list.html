@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landsat Reflectance Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        p {
+            margin-bottom: 1em;
+        }
+        ul {
+            margin-left: 20px;
+            list-style-type: disc;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+        .formula {
+            background-color: #f9f9f9;
+            border-left: 4px solid #2c3e50;
+            padding: 10px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Landsat Reflectance Information</h1>
+
+    <p>Landsat Reflectance refers to the measurement of the reflectance of Earth's surface as captured by the Landsat satellites. Reflectance is the ratio of the light energy reflected by a surface to the light energy incident on it. This data is derived from raw satellite observations and is processed to provide physical reflectance values for further analysis.</p>
+
+    <h2>1. Landsat Missions</h2>
+    <p>Landsat is a series of Earth-observing satellites that have been capturing imagery since 1972. Different versions of the satellites include:</p>
+    <ul>
+        <li><strong>Multispectral Scanner (MSS)</strong>: Landsat 1-5</li>
+        <li><strong>Thematic Mapper (TM)</strong>: Landsat 4 and 5</li>
+        <li><strong>Enhanced Thematic Mapper Plus (ETM+)</strong>: Landsat 7</li>
+        <li><strong>Operational Land Imager (OLI)</strong>: Landsat 8 and 9</li>
+        <li><strong>Thermal Infrared Sensor (TIRS)</strong>: Landsat 8 and 9</li>
+    </ul>
+
+    <h2>2. Reflectance Types</h2>
+    
+    <h3>Top-of-Atmosphere Reflectance (TOA Reflectance)</h3>
+    <p>TOA reflectance is the reflectance measured at the top of Earth's atmosphere, which includes atmospheric influences. It is calculated using the formula:</p>
+
+    <div class="formula">
+        <p><code>&#961;&#955; = (&#960; * L&#955; * d<sup>2</sup>) / (ESUN&#955; * cos(&#952;<sub>s</sub>))</code></p>
+        <p>where:</p>
+        <ul>
+            <li>&#961;&#955;: TOA Reflectance</li>
+            <li>L&#955;: Spectral radiance</li>
+            <li>d: Earth-Sun distance (astronomical units)</li>
+            <li>ESUN&#955;: Solar irradiance</li>
+            <li>&#952;<sub>s</sub>: Solar zenith angle</li>
+        </ul>
+    </div>
+
+    <h3>Surface Reflectance (SR)</h3>
+    <p>Surface Reflectance represents the reflectance of Earth's surface after correcting for atmospheric effects. This data is essential for environmental analysis. Tools like <strong>LEDAPS</strong> and <strong>LaSRC</strong> are used to derive SR from TOA reflectance.</p>
+
+    <h2>3. Spectral Bands</h2>
+    <p>Landsat sensors capture data in various spectral bands. Some commonly used bands include:</p>
+    <ul>
+        <li><strong>Visible Bands (Blue, Green, Red)</strong>: For vegetation, water, and urban studies.</li>
+        <li><strong>Near-Infrared (NIR)</strong>: Sensitive to vegetation health.</li>
+        <li><strong>Shortwave Infrared (SWIR)</strong>: Used for detecting moisture in plants and soil.</li>
+        <li><strong>Thermal Infrared (TIR)</strong>: Used for temperature analysis.</li>
+    </ul>
+
+    <h2>4. Applications of Landsat Reflectance</h2>
+    <p>Landsat reflectance data is widely used in various fields, including:</p>
+    <ul>
+        <li><strong>Vegetation Indices</strong>: Such as NDVI, which measure vegetation health.</li>
+        <li><strong>Water Quality and Land Use</strong>: Monitoring changes in water bodies, deforestation, and urbanization.</li>
+        <li><strong>Climate Studies</strong>: Analyzing long-term environmental changes like desertification and ice melt.</li>
+    </ul>
+
+    <h2>5. Landsat Data Processing</h2>
+    <p>To analyze reflectance data, the raw satellite imagery undergoes the following steps:</p>
+    <ul>
+        <li><strong>Radiometric Calibration</strong>: Conversion of raw digital numbers (DNs) into radiance.</li>
+        <li><strong>TOA Reflectance Conversion</strong>: Conversion from radiance to TOA reflectance.</li>
+        <li><strong>Surface Reflectance Estimation</strong>: Applying atmospheric corrections for surface reflectance.</li>
+    </ul>
+
+    <h2>6. Tools for Analyzing Landsat Reflectance</h2>
+    <p>Common tools for analyzing Landsat data include:</p>
+    <ul>
+        <li><strong>Google Earth Engine (GEE)</strong>: For large-scale data processing.</li>
+        <li><strong>QGIS/ArcGIS</strong>: GIS tools for importing and analyzing imagery.</li>
+        <li><strong>Python Libraries</strong>: Such as <code>rasterio</code>, <code>geopandas</code>, and <code>earthpy</code> for programmatic analysis.</li>
+    </ul>
+
+</body>
+</html>
